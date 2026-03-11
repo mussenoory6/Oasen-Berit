@@ -64,7 +64,7 @@ export default function InstagramTeaser() {
               className="text-2xl font-semibold tracking-tight text-neutral-900 md:text-3xl"
               style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
-              Följ vår resa
+              Oasen på Instagram
             </h2>
           </div>
           <a
@@ -160,7 +160,7 @@ export default function InstagramTeaser() {
             }}
           >
             <InstagramIcon />
-            <span>Följ oss på Instagram</span>
+            <span>Följ Oasen på Instagram</span>
           </a>
         </RevealOnScroll>
       </div>

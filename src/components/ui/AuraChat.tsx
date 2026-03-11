@@ -21,16 +21,15 @@ function getResponse(text: string): string {
   if (lower.includes("tid") || lower.includes("boka")) return responses.tider
   if (lower.includes("pris") || lower.includes("kostar") || lower.includes("behandl"))
     return responses.priser
-  if (lower.includes("ansikts") || lower.includes("ansiktsbehandling")) return responses.ansikts
-  if (lower.includes("lash") || lower.includes("brow") || lower.includes("frans") || lower.includes("bryn"))
-    return responses.lashbrow
-  if (lower.includes("eftervård") || lower.includes("efter")) return responses.eftervard
+  if (lower.includes("ansikts") || lower.includes("ansiktsbehandling")) return responses.priser
+  if (lower.includes("madonna") || lower.includes("micro") || lower.includes("föryngring"))
+    return responses.madonna
+  if (lower.includes("elight") || lower.includes("ipl") || lower.includes("hår") || lower.includes("laser"))
+    return responses.elight
   if (lower.includes("kontakt") || lower.includes("telefon") || lower.includes("mejl") || lower.includes("ring"))
     return responses.kontakt
-  if (lower.includes("adress") || lower.includes("var") || lower.includes("hitta") || lower.includes("örebro"))
+  if (lower.includes("adress") || lower.includes("var") || lower.includes("hitta") || lower.includes("djursholm"))
     return responses.adress
-  if (lower.includes("öppettider") || lower.includes("öppet") || lower.includes("stängt"))
-    return responses.oppettider
   return fallback
 }
 

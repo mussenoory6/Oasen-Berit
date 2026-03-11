@@ -135,9 +135,9 @@ export default function TestimonialsSection() {
             </div>
           </a>
 
-          {/* Bokadirekt badge */}
+          {/* Certifierad hudterapeut badge */}
           <a
-            href="https://www.bokadirekt.se"
+            href={siteContent.company.bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-3 rounded-2xl bg-white px-5 py-4 transition hover:shadow-md"
@@ -148,14 +148,14 @@ export default function TestimonialsSection() {
               style={{ backgroundColor: "var(--brand)" }}
             >
               <svg className="h-3.5 w-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
               </svg>
             </div>
             <div>
               <p className="text-[11px] font-medium uppercase text-neutral-400" style={{ letterSpacing: "0.14em" }}>
-                Bokadirekt
+                Sedan 1999
               </p>
-              <p className="mt-0.5 text-sm font-semibold text-neutral-800">Verifierad klinik</p>
+              <p className="mt-0.5 text-sm font-semibold text-neutral-800">Aukt. hudterapeut</p>
             </div>
           </a>
         </RevealOnScroll>

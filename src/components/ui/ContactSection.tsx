@@ -170,7 +170,7 @@ export default function ContactSection() {
                 rel="noopener noreferrer"
                 className="btn-premium btn-glow btn-glow-cta btn-shimmer inline-flex rounded-full px-7 py-3.5 text-sm font-semibold text-white shadow-md"
               >
-                Boka tid via Bokadirekt →
+                Boka din behandling →
               </a>
             </RevealOnScroll>
           </div>

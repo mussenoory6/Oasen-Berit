@@ -5,7 +5,7 @@ import { useBooking } from "@/context/BookingContext"
 
 /** Use supported easing string for production build compatibility */
 const EASE = "easeOut" as const
-const HERO_VIDEO = "/3181733-uhd_3840_2160_25fps.mp4"
+const HERO_VIDEO = "/video2.mp4"
 
 const staggerContainer = {
   hidden: {},
@@ -167,13 +167,13 @@ export default function HeroSection() {
 
           {/* ── RIGHT — Cinematic video container (inset, glassmorphism) ── */}
           <motion.div
-            className="relative"
+            className="relative mx-auto w-full max-w-[560px]"
             variants={fadeIn}
             initial="hidden"
             animate="show"
           >
             <motion.div
-              className="relative overflow-hidden rounded-[40px] shadow-2xl"
+              className="relative overflow-hidden rounded-[32px] shadow-2xl"
               style={{
                 y: videoY,
                 border: "1px solid rgba(185,151,85,0.35)",
@@ -182,7 +182,7 @@ export default function HeroSection() {
               }}
             >
               {/* Video container — aspect ratio preserved, object-cover */}
-              <div className="relative aspect-[4/3] min-h-[320px] w-full md:aspect-[16/10] md:min-h-[420px]">
+              <div className="relative aspect-[4/3] min-h-[300px] w-full md:aspect-[16/10] md:min-h-[400px]">
                 {/* Poster fallback for low bandwidth / mobile */}
                 <img
                   src={hero.heroImage}
@@ -215,12 +215,12 @@ export default function HeroSection() {
                   </video>
                 </motion.div>
 
-                {/* Warm-cream overlay for readability */}
+                {/* Subtle bottom vignette for card legibility */}
                 <div
                   className="pointer-events-none absolute inset-0"
                   style={{
                     background:
-                      "linear-gradient(to top, rgba(250,249,247,0.55) 0%, rgba(250,249,247,0.12) 40%, transparent 70%)",
+                      "linear-gradient(to top, rgba(0,0,0,0.28) 0%, transparent 45%)",
                   }}
                 />
               </div>
